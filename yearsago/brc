@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class bcr {
+	public static void main(String[] args) {
+	System.out.println("请输入一个小于50的数。");
+		Scanner in = new Scanner(System.in);
+		int b=in.nextInt();
+		int a = 0;
+		while(true){
+			while(a<50){
+				a++;
+				if(a>=b)continue;
+			}
+			a++;
+			if(b>=100)break;
+		}
+		System.out.println(a);
+		System.out.println(b);
+	}
+}
